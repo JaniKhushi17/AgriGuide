@@ -1,0 +1,110 @@
+/* AgricultureCards.css */
+
+.agriculture-cards-container {
+    width: 1422px;
+    padding: 45px;
+    background-color: #A5CE8A ;
+    /* border: 2px solid black; */
+  }
+
+  .heading{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #A5CE8A;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card color variations */
+  .disease-card {
+    background: linear-gradient(to bottom, #aed30b, #0fb657);
+  }
+  
+  .weather-card {
+    background: linear-gradient(to bottom, #80d5d5, #4a89ff);
+  }
+  
+  .chatbot-card {
+    background: linear-gradient(to bottom, #aed30b, #0fb657);
+  }
+  
+  .card-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 32px;
+    background-color: #099b1f;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-container {
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  .card-content {
+    padding: 64px 24px 32px 24px;
+    color: white;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .card-description {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  .card-bottom {
+    height: 32px;
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    margin-top: auto;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 640px) {
+    .card {
+      width: 256px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      width: 288px;
+    }
+  }
